@@ -1,0 +1,7 @@
+# The important json file consist the password.
+# The secrets file contains the workflow.
+
+important.json 
+secrets.log 
+
+*.log
