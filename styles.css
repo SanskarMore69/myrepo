@@ -1,19 +1,39 @@
-/* style.css */
+/* styles.css */
 body {
-    /* Gradient background from purple to teal */
     background: linear-gradient(to right, #6a3093, #a044ff, #5ff0e6);
     font-family: Arial, sans-serif;
     color: white;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;   /* stacks the h1 and p vertically */
-    justify-content: center;  /* centers content vertically */
-    align-items: center;      /* centers content horizontally */
-    height: 100vh;            /* full height of the viewport */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);   /* soft glass-like card */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+p:hover {
+    transform: scale(1.05);                  /* slight grow on hover */
+    background: rgba(255, 255, 255, 0.25);
 }
